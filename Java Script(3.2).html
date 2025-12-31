@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Remove Duplicates from Array</title>
+</head>
+<body>
+  <h2>Remove Duplicate Values from an Array</h2>
+  <p id="original"></p>
+  <p id="unique"></p>
+  <script>
+
+    const array = [1, 2, 2, 3, 4, 4, 5];
+    const uniqueArray = [...new Set(array)];
+    document.getElementById("original").textContent =
+      "Original Array: " + array.join(", ");
+    document.getElementById("unique").textContent =
+      "Array without duplicates: " + uniqueArray.join(", ");
+  </script>
+
+</body>
+</html>
